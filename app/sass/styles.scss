@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /* TYPO */
+    --font: 'Red Hat Display', sans-serif;
+
+    /* SIZE */
+    --fs-title: 28px;
+    --fs-txt: 16px;
+    --fs-plan-btn: 14px;
+    --fs-btn: 15px;
+
+    /* WEIGHT */
+    --fw-title: 900;
+    --fw-txt: 500;
+    --fw-plan-btn: 700;
+    --fw-btn: 900;
+
+    /* COLORS */
+    --clr-background: #E0E8FF;
+    --clr-bg-plan: #F7F9FF;
+    --clr-title: #1F2E55;
+    --clr-txt: #717FA6;
+    --clr-txt-hov: #1F2E55;
+
+        /* BTN PLAN */
+        --clr-btn-plan: #382AE1;
+        --clr-btn-plan-hov: #766CF1;
+
+        /* BTN PAYMENT */
+        --clr-btn-pay: #FFF;
+        --clr-btn-bg-pay: #382AE1;
+        --clr-btn-bg-pay-hov: #766CF1;
+}
+
+body {
+    background-image: url(/assets/img/background.svg);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    height: 697px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card__img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card__info{
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.title{
+    font-family: var(--font);
+    font-size: var(--fs-title);
+    font-weight: var(--fw-title);
+    color: var(--clr-title);
+    margin-bottom: 20px;
+}
+
+.description{
+    font-family: var(--font);
+    font-size: var(--fs-txt);
+    font-weight: var(--fw-txt);
+    line-height: 25px;
+    color: var(--clr-txt);
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: var(--clr-bg-plan);
+    border-radius: 10px;
+}
+
+.plan__info{
+    display: flex;
+    align-items: center;
+}
+
+.plan__middle{
+    padding: 0px 15px;
+    text-align: flex-start;
+}
+
+.plan__title{
+    font-family: var(--font);
+    font-size: var(--fs-txt);
+    font-weight: var(--fw-title);
+    color: var(--clr-title);
+}
+
+.plan__price{
+    font-family: var(--font);
+    font-size: var(--fs-txt);
+    font-weight: var(--fw-txt);
+    color: var(--clr-txt);
+}
+
+.plan__btn{
+    font-family: var(--font);
+    font-size: var(--fs-plan-btn);
+    font-weight: var(--fw-plan-btn);
+    color: var(--clr-btn-plan);
+}
+
+.plan__btn:hover{
+    color: var(--clr-btn-plan-hov);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn__pay{
+    padding: 15px 0px;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+    font-family: var(--font);
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-btn);
+    background-color: var(--clr-btn-bg-pay);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    color: var(--clr-bg-plan);
+}
+
+.btn__pay:hover{
+    background-color: var(--clr-btn-bg-pay-hov);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn__cancel{
+    padding: 10px 80px;
+    margin-top: 15px;
+    align-self: center;
+    font-family: var(--font);
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-btn);
+    color: var(--clr-txt);
+}
+
+.btn__cancel:hover{
+    color: var(--clr-title);
+    text-decoration: none;
+    cursor: pointer;
+}
