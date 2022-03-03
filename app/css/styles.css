@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -13,10 +14,10 @@
   /* TYPO */
   --font: "Red Hat Display", sans-serif;
   /* SIZE */
-  --fs-title: 28px;
-  --fs-txt: 16px;
-  --fs-plan-btn: 14px;
-  --fs-btn: 15px;
+  --fs-title: 1.75rem;
+  --fs-txt: 1rem;
+  --fs-plan-btn: .875rem;
+  --fs-btn: .875rem;
   /* WEIGHT */
   --fw-title: 900;
   --fw-txt: 500;
@@ -44,6 +45,8 @@ body {
   background-color: var(--clr-background);
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   align-items: center;
 }
 
@@ -57,12 +60,12 @@ body {
 }
 
 .card__img {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
 }
 
 .card__info {
   text-align: center;
-  padding: 40px 60px;
+  padding: 2.5rem 3.75rem;
 }
 
 .title {
@@ -70,14 +73,14 @@ body {
   font-size: var(--fs-title);
   font-weight: var(--fw-title);
   color: var(--clr-title);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .description {
   font-family: var(--font);
   font-size: var(--fs-txt);
   font-weight: var(--fw-txt);
-  line-height: 25px;
+  line-height: 1.625rem;
   color: var(--clr-txt);
 }
 
@@ -87,7 +90,7 @@ body {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   background-color: var(--clr-bg-plan);
   border-radius: 10px;
 }
@@ -98,7 +101,7 @@ body {
 }
 
 .plan__middle {
-  padding: 0px 15px;
+  padding: 0rem 1rem;
   text-align: flex-start;
 }
 
@@ -130,10 +133,10 @@ body {
 }
 
 .btn__pay {
-  padding: 15px 0px;
+  padding: 1rem 0rem;
   width: 80%;
-  margin-top: 30px;
-  border-radius: 10px;
+  margin-top: 1.875rem;
+  border-radius: 0.625rem;
   align-self: center;
   text-align: center;
   font-family: var(--font);
@@ -151,7 +154,7 @@ body {
 }
 
 .btn__cancel {
-  padding: 10px 80px;
+  padding: 0.625rem 5rem;
   margin-top: 15px;
   align-self: center;
   font-family: var(--font);
